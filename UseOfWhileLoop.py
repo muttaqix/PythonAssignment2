@@ -11,6 +11,10 @@ while True:
     
     if num < 0:
         break
+
+    if num % 11 == 0:
+        continue
+    
     count += 1
 
 print("The loop iterated",count, "times.")
