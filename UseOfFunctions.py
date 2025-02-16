@@ -5,6 +5,10 @@ def Avg(numbers):
     return average
 
 def sumSqDiff(numbers,average):
+    ssd = 0
+    for x in numbers:
+        ssd += (x - average) **2
+    return ssd
 
 
 A = Avg(numbers)
