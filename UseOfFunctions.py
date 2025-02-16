@@ -7,10 +7,13 @@ def Avg(numbers):
 def sumSqDiff(numbers,average):
     ssd = 0
     for x in numbers:
-        ssd += (x - average) **2
+        ssd += (x - average)**2
     return ssd
 
+average = Avg(numbers)
+ssd = sumSqDiff(numbers,average)
+numberOfElements = len(numbers)
 
-A = Avg(numbers)
-print(A)
+StandardDeviation = math.sqrt(ssd / numberOfElements)
+print(StandardDeviation)
 
